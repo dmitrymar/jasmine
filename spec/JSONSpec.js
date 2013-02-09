@@ -1,10 +1,13 @@
 //Spec Code
 describe('Simple Total Test', function() {
-    it('2+2=4', function() {
+    it('Increase number of values to 4', function() {
         var testObject = new JasmineTester({
             a: 2,
-            b: 2
+            b: 2,
+            c: 2,
+            d: 2
         });
-        expect(testObject.total()).toEqual(4);
+
+        expect(testObject).toBeDefined();
     });
 });
