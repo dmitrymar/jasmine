@@ -1,9 +1,10 @@
-describe('Simple Test', function() {
+//Spec Code
+describe('Simple Total Test', function() {
     it('2+2=4', function() {
-        expect(
-
-        function() {
-            return 2 + 2;
-        }()).toEqual(4);
+        var testObject = new JasmineTester({
+            a: 2,
+            b: 2
+        });
+        expect(testObject.total()).toEqual(4);
     });
 });
